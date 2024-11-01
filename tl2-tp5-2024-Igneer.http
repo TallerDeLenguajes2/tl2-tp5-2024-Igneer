@@ -1,0 +1,6 @@
+@tl2_tp5_2024_Igneer_HostAddress = http://localhost:5140
+
+GET {{tl2_tp5_2024_Igneer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
