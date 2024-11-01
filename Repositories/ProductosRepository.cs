@@ -1,11 +1,22 @@
 using Microsoft.Data.Sqlite;
 
-public class ProductosRepository
+public class ProductosRepositorySQL : IProductoRepository
 {
     string connectionString = "Data Source=Tienda.db;Cache=Shared";
-    public List<Producto> listarProductosExistentes()
+
+    public void InsertProducto(Producto p)
     {
-        
+        string queryString = @"INSERT ";
+
+
+    }
+
+    public void UpdateProducto(int id, Producto p)
+    {
+
+    }
+    public List<Producto> GetProductos()
+    {
         List<Producto> productos = new List<Producto>();
         string queryString = @"SELECT * FROM Productos";
         
@@ -31,5 +42,15 @@ public class ProductosRepository
         }
 
         return productos;
-    }   
+    }
+
+    public Producto GetProducto(int id)
+    {
+
+    }
+
+    public void DeleteProducto(int id)
+    {
+
+    }
 }
