@@ -4,16 +4,23 @@ using Microsoft.AspNetCore.Mvc;
 [Route("[controller]")]
 public class ProductoController : ControllerBase
 {
-    ProductosRepository pr = new ProductosRepository();
+    ProductosRepositorySQL prSQL = new ProductosRepositorySQL();
     
-    [HttpGet("/api/Producto")]
-    public IActionResult listarProductosExistentes()
+    static int autonumerico;
+    ProductoController()
     {
-        List<Producto> productos = pr.listarProductosExistentes();
+        autonumerico = prSQL.GetProductos().Max(p => p.IdProducto);
+    }    
+
+    [HttpGet("/api/Producto")]
+    public IActionResult GetProductos()
+    {
+        List<Producto> productos = prSQL.GetProductos();
     
         return Ok(productos);
     }
     
+    //[HttpPut("")]
 
 
 

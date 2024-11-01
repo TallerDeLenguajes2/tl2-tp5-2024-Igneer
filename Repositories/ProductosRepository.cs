@@ -46,7 +46,7 @@ public class ProductosRepositorySQL : IProductoRepository
 
     public Producto GetProducto(int id)
     {
-
+        return null;
     }
 
     public void DeleteProducto(int id)

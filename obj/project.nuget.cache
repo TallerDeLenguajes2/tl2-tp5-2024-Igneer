@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4/V97P0oEcAtRBhhRcuPbq2inqr/CxACob8D6GMXfeHUMB0sDkuO3RXXfYKfRrlK3WKJXw8Eu1z8Ttloj9Wx2w==",
+  "dgSpecHash": "Y3VrQezHAkXQbhbXuGlgJ4WDqjbgZ2JFBA0e18SDxNCIN3Kbfm7WNGhMi7pQH09Rujq4D7BNkD9ySP+3hJabrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tato_\\OneDrive\\Escritorio\\tl2-tp5-2024-Igneer\\tl2-tp5-2024-Igneer.csproj",
+  "projectFilePath": "c:\\Users\\tato_\\OneDrive\\Escritorio\\tl2-tp5-2024-Igneer\\tl2-tp5-2024-Igneer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tato_\\.nuget\\packages\\microsoft.data.sqlite\\8.0.10\\microsoft.data.sqlite.8.0.10.nupkg.sha512",
     "C:\\Users\\tato_\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.10\\microsoft.data.sqlite.core.8.0.10.nupkg.sha512",
