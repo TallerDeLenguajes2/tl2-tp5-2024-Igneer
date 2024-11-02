@@ -1,4 +1,5 @@
 using Microsoft.Data.Sqlite;
+using SQLitePCL;
 
 class PresupuestoRepositorySQL : IPresupuestoRepository
 {
@@ -64,5 +65,46 @@ class PresupuestoRepositorySQL : IPresupuestoRepository
         return presupuestos;
     }
 
+    public Presupuesto GetDetallesPresupuesto(int id)
+    {
+        Presupuesto p = new Presupuesto();
+        string queryString = @"SELECT * FROM Presupuestos WHERE idPresupuesto = @idPresupuesto";
+
+        using(SqliteConnection connection = new SqliteConnection(connectionString))
+        {
+            connection.Open();
+            SqliteCommand command = new SqliteCommand(queryString, connection);
+            command.Parameters.AddWithValue("@idPresupuesto", id);
+            using(SqliteDataReader reader = command.ExecuteReader())
+            {
+                reader.Read();
+                p.IdPresupuesto = Convert.ToInt32(reader["idPresupuesto"]);
+                p.NombreDestinatario = reader["NombreDestinatario"].ToString();
+                p.FechaCreacion = DateOnly.Parse(reader["FechaCreacion"].ToString());
+                string queryString2 = @"SELECT * FROM Productos INNER JOIN PresupuestosDetalle USING (idProducto) WHERE idPresupuesto = @idPresupuesto";
+                SqliteCommand command2 = new SqliteCommand(queryString2, connection);
+
+                command2.Parameters.AddWithValue("@idPresupuesto", id);
+
+                using(SqliteDataReader reader2 = command2.ExecuteReader())
+                {
+                    while(reader2.Read())
+                    {
+                        PresupuestoDetalle prD = new PresupuestoDetalle();
+                        Producto producto = new Producto();
+                        //---------Carga del Producto---------
+                        producto.IdProducto = Convert.ToInt32(reader2["idProducto"]);
+                        producto.Descripcion = reader2["Descripcion"].ToString();
+                        producto.Precio = Convert.ToInt32(reader2["Precio"]);
+                        
+                        p.agregarProducto(producto, Convert.ToInt32(reader2["Cantidad"]));
+                    }
+                } 
+
+            }
+        }
+
+        return p;
+    }
 
 }

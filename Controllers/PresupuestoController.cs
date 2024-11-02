@@ -27,4 +27,12 @@ public class PresupuestoController : ControllerBase
         return Ok(presupuestos);
     }
 
+    [HttpGet("/api/Presupuesto/{id}")]
+    public IActionResult GetDetallesPresupuesto(int id)
+    {
+        Presupuesto presupuesto = new Presupuesto();
+        presupuesto = presupuestoSQL.GetDetallesPresupuesto(id);
+
+        return Ok(presupuesto);
+    }
 }
