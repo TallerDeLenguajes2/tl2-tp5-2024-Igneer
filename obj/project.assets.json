@@ -746,11 +746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tato_\\OneDrive\\Escritorio\\tl2-tp5-2024-Igneer\\tl2-tp5-2024-Igneer.csproj",
+      "projectUniqueName": "C:\\Users\\tato_\\OneDrive\\Escritorio\\tl2-tp5-2024-Igneer\\tl2-tp5-2024-Igneer\\tl2-tp5-2024-Igneer.csproj",
       "projectName": "tl2-tp5-2024-Igneer",
-      "projectPath": "C:\\Users\\tato_\\OneDrive\\Escritorio\\tl2-tp5-2024-Igneer\\tl2-tp5-2024-Igneer.csproj",
+      "projectPath": "C:\\Users\\tato_\\OneDrive\\Escritorio\\tl2-tp5-2024-Igneer\\tl2-tp5-2024-Igneer\\tl2-tp5-2024-Igneer.csproj",
       "packagesPath": "C:\\Users\\tato_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tato_\\OneDrive\\Escritorio\\tl2-tp5-2024-Igneer\\obj\\",
+      "outputPath": "C:\\Users\\tato_\\OneDrive\\Escritorio\\tl2-tp5-2024-Igneer\\tl2-tp5-2024-Igneer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tato_\\AppData\\Roaming\\NuGet\\NuGet.Config"

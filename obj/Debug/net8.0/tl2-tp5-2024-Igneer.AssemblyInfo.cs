@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tl2-tp5-2024-Igneer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+caaf0bd9da06e5d4936429b50edfabba017a3e37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5b51f94560e358457ed9ae4842200ee762f5346")]
 [assembly: System.Reflection.AssemblyProductAttribute("tl2-tp5-2024-Igneer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tl2-tp5-2024-Igneer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

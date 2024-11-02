@@ -1,7 +1,6 @@
 public class Presupuesto
 {
     private List<PresupuestoDetalle> detalle;
-
     public int IdPresupuesto { get; set; }
     public string NombreDestinatario { get; set; }
     public List<PresupuestoDetalle> Detalle { get => detalle;}

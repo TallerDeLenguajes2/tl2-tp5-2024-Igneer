@@ -1,8 +1,8 @@
 interface IProductoRepository
 {
-    public void InsertProducto(Producto p);
+    public void InsertProducto(string Descripcion, int precio);
 
-    public void UpdateProducto(int id, Producto p);
+    public void UpdateProducto(int id, string Descripcion, int precio);
 
     public List<Producto> GetProductos();
 
