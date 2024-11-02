@@ -8,7 +8,7 @@ public class PresupuestoDetalle
 
     public void agregarProducto(Producto p)
     {
-        if(producto != null)
+        if(p != null)
         {
             producto = p;
         }
